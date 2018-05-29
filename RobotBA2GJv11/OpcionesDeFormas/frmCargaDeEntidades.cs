@@ -74,6 +74,31 @@ namespace RobotBA2GJv11.OpcionesDeFormas
                     }
                 }
 
+                
+                this.dtGridDatos.ColumnCount = objEnt.ColumnsEntity.Count;
+                this.dtGridDatos.ColumnHeadersVisible = true;
+                this.dtGridDatos.DefaultCellStyle.ForeColor = Color.Red;
+                //Adjust
+
+               int cont = 0;
+                foreach (cls.ColFileEntity Col  in objEnt.ColumnsEntity)
+                { 
+                    dtGridDatos.Columns[cont].Name = Col.NameCol;
+                    cont++;
+                }
+                foreach (cls.RowsFileEntity rows in objEnt.RowsEntity)
+                {
+                    cont = 0;
+                    string[] r = new string[rows.Values.Count];
+                    foreach(cls.RowColFileEntity row in rows.Values)
+                    {
+                        r[cont] = row.Value;
+                        cont++;
+                    }
+                    dtGridDatos.Rows.Add(r);
+                }
+
+
                 RobotSOA2GJv11.CapaSOA objSOA = new RobotSOA2GJv11.CapaSOA();
                 objSOA.WS_GetEntityAsString("P_Departamento");
 
