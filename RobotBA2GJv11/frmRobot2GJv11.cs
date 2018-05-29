@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace RobotBA2GJv11
 {
-    public partial class Form1 : Form
+    public partial class frmRobot2GJv11 : Form
     {
-        public Form1()
+        public frmRobot2GJv11()
         {
             InitializeComponent();
+        }
+
+        private void btoCargaMasivaEntidades_Click(object sender, EventArgs e)
+        {
+            OpcionesDeFormas.frmCargaDeEntidades objForm = new OpcionesDeFormas.frmCargaDeEntidades();
+            objForm.Show();
         }
     }
 }

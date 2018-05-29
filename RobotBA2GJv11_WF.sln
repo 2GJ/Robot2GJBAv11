@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotBA2GJv11", "RobotBA2GJv11\RobotBA2GJv11.csproj", "{54CD6512-861B-4E05-AACB-47AE242103CE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{203229EA-0F2D-4C7C-8B1A-86CF345A4EDA} = {203229EA-0F2D-4C7C-8B1A-86CF345A4EDA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotSOA2GJv11", "RobotSOA2GJv11\RobotSOA2GJv11.csproj", "{203229EA-0F2D-4C7C-8B1A-86CF345A4EDA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{54CD6512-861B-4E05-AACB-47AE242103CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54CD6512-861B-4E05-AACB-47AE242103CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54CD6512-861B-4E05-AACB-47AE242103CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{203229EA-0F2D-4C7C-8B1A-86CF345A4EDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{203229EA-0F2D-4C7C-8B1A-86CF345A4EDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{203229EA-0F2D-4C7C-8B1A-86CF345A4EDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{203229EA-0F2D-4C7C-8B1A-86CF345A4EDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

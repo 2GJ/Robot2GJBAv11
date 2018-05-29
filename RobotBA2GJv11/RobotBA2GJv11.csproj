@@ -45,14 +45,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="cls\FileEntity.cs" />
+    <Compile Include="frmRobot2GJv11.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmRobot2GJv11.Designer.cs">
+      <DependentUpon>frmRobot2GJv11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionesDeFormas\frmCargaDeEntidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionesDeFormas\frmCargaDeEntidades.Designer.cs">
+      <DependentUpon>frmCargaDeEntidades.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmRobot2GJv11.resx">
+      <DependentUpon>frmRobot2GJv11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionesDeFormas\frmCargaDeEntidades.resx">
+      <DependentUpon>frmCargaDeEntidades.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -74,6 +87,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RobotSOA2GJv11\RobotSOA2GJv11.csproj">
+      <Project>{203229ea-0f2d-4c7c-8b1a-86cf345a4eda}</Project>
+      <Name>RobotSOA2GJv11</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
